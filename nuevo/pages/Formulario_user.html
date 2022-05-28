@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=s, initial-scale=1.0" />
+
+    <meta name="google-signin-scope" content="profile email" />
+    <meta name="google-signin-client_id" content="SEU_ID_DO_CLIENTE" />
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Koulen&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="/css/Formulario_user.css" />
+    <title>Formulario</title>
+  </head>
+
+  <body>
+    <div class="overlay">
+      <form>
+        <header><div class="de_tranquis"></div></header>
+
+        <div class="con">
+          <input
+            class="form-input"
+            id="txt-input"
+            type="text"
+            placeholder="@UserName"
+            required
+          />
+          <input
+            class="form-input"
+            type="password"
+            placeholder="Password"
+            id="pwd"
+            name="password"
+            required
+          />
+          <input
+            class="form-input"
+            type="password"
+            placeholder="Confirm password"
+            id="pwd"
+            name="Password"
+            required
+          />
+          <input class="date" type="date" />
+          <button class="crear_cuenta">Crear cuenta</button>
+          <button class="cancelar">Cancelar</button>
+
+          <div class="logo"></div>
+          <!-- <button class="forgot">¿Has olvidado la cuenta?</button>  -->
+          <!-- sign in google -->
+          <div
+            class="g-signin2"
+            data-onsuccess="onSignIn"
+            data-theme="dark"
+            data-width="370"
+            data-height="50"
+            data-longtitle="true"
+            data-lang="es-ES"
+          ></div>
+        </div>
+      </form>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>

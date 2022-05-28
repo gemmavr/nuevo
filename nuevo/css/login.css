@@ -1,0 +1,140 @@
+
+@import url('https://fonts.googleapis.com/css?family=Abel|Abril+Fatface|Alegreya|Arima+Madurai|Dancing+Script|Dosis|Merriweather|Oleo+Script|Overlock|PT+Serif|Pacifico|Playball|Playfair+Display|Share|Unica+One|Vibur');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Koulen', cursive;
+}
+
+:root{
+    --gradient-very-light-red: hsl(13, 100%, 72%);
+    --gradient-light-red: hsl(353, 100%, 62%);
+}
+
+html{
+    width: 100vw;
+    height: 100vh;
+    background: #6C7A89;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-image: url(/images/beer.png);
+    background-repeat: no-repeat;
+    background-size:cover;
+    color: white;
+}
+
+form {
+    background-image: linear-gradient(var(--gradient-very-light-red), var(--gradient-light-red));
+    background-position: center;
+    width: 400px;  
+    border-radius: 15px;
+    margin: 5% auto;
+    opacity: .95;
+    padding: 2%;
+}
+
+.con {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+header {
+    margin: 10% auto 10% auto;
+    text-align: center;
+    font-size: 250%;
+    font-family: 'Playfair Display', serif; 
+}
+
+input[class="form-input"]{
+    color: white;
+    background-color: rgba(252, 252, 252, 0.219);
+    display: block;
+    width: 350px;
+    height: 50px;
+    margin-top: 2%;
+    margin-bottom: 10px;
+    padding: 15px;
+    font-size: 16px;
+    font-family: 'Abel', sans-serif;
+    outline: none;
+    border: none;
+    border-radius: 50px 50px 50px 50px;
+    transition: 0.2s linear;
+    -webkit-border-radius: 50px 50px 50px 50px;
+    -moz-border-radius: 50px 50px 50px 50px;
+    -ms-border-radius: 50px 50px 50px 50px;
+    -o-border-radius: 50px 50px 50px 50px;
+}
+
+button {
+    color: white;
+    display: inline-block;
+    color: #252537;
+    width: 160px;
+    height: 50px;
+    padding: 0 20px;
+    background: #fff;
+    border-radius: 50px 50px 50px 50px; 
+    outline: none;
+    border: none; 
+    cursor: pointer;
+    text-align: center;
+    transition: all 0.2s linear;   
+    margin: 2% auto;
+    letter-spacing: 0.05em;
+}
+
+.entrar {
+    background-color: white;   
+    color: rgb(252, 100, 110);
+}
+
+.sign-up{
+    background-color:transparent;
+    border: solid 2px white;
+    color: white;
+}
+
+.forgot {
+    color: white;
+    background-color: transparent;
+    width: 350px;
+    height: 50px;
+}
+
+/* ///////////////////////////////////////////////////////////////////// */
+
+button:hover {
+    transform: translatey(3px);
+    box-shadow: none;
+}
+button:hover {
+    animation: ani9 0.4s ease-in-out infinite alternate;
+}  
+@keyframes ani9 {
+    0% {
+        transform: translateY(3px);
+    }
+    100% {
+        transform: translateY(5px);
+        -webkit-transform: translateY(5px);
+        -moz-transform: translateY(5px);
+        -ms-transform: translateY(5px);
+        -o-transform: translateY(5px);
+}
+}
+
+.g-signin2 .abcRioButton {
+    margin: 5px auto 5px auto;    
+}
+
+@media (max-width:200px){
+    
+}
