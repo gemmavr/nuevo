@@ -20,19 +20,11 @@ html{
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    background-image: url(/images/bar01.png);
+    background-image: url(/nuevo/images/bar01.png);
     background-image: radial-gradient();
     background-repeat: no-repeat;
     background-size:cover;
     color: white;
-}
-
-.de_tranquis {
-    background-image: url(./DeTranquis-icon.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding: 25px;
-    margin: 0 auto 10% auto;   
 }
 
 
